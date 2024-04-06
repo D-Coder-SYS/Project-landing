@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+#HeroContent {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: -3rem;
+}
+
 .navMenu{
     display: flex;
     color: white;
@@ -24,8 +31,79 @@
     gap: 20px;
 }
 
+.Herotext {
+    font-size: 48px;
+    color: #f9faf8;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.HeroSecundayText {
+    color: #e5e7eb;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    letter-spacing: -1px;
+}
+
 .LinkNav {
     color: #e5e7eb;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+}
+
+.conteinerSuaMarca {
+    display: flex;
+    background-color: #1f2937;
+    margin: -1rem -1rem 1rem -1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.heroButton {
+    background-color: #3882f6;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    width: 150px;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.heroButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.heroButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.heroButton:hover span {
+    padding-right: 25px;
+}
+  
+.heroButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.HeroPlaceholder {
+    border-radius: 10px;
 }
