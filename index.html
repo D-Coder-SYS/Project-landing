@@ -6,17 +6,19 @@
     <title>Seu projeto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <nav class="navMenu">
-        <p class="TextoLogo">Seu ideia em evidência!</p>
-        <ul class="ListaMenu">
-            <li class="LinkNav">Sua marca</li>
-            <li class="LinkNav">Nosso diferencial</li>
-            <li class="LinkNav">Contate-nos!</li>
-        </ul>
-    </nav>
-</header>
+
 <body>
+    <header>
+        <nav class="navMenu">
+            <h1 class="TextoLogo">Seu ideia em evidência!</h1>
+            <ul class="ListaMenu">
+                <li><a class="LinkNav" href="#linkSuaMarca">Sua marca</a></li>
+                <li><a class="LinkNav" href="#linkDiferencial">Nosso diferencial</a></li>
+                <li><a class="LinkNav" href="#">Contate-nos!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <div id="linkSuaMarca" class="conteinerSuaMarca">
         <div id="HeroContent">
             <p class="Herotext">Sua experiência online agora!</p>
@@ -25,5 +27,24 @@
         </div>
         <img class="HeroPlaceholder" src="https://fastly.picsum.photos/id/3/500/300.jpg?hmac=oCCVPF549pn18JMdk7q48khBBABvTOLvKmglE_w3H9s" alt="placeholder">
     </div>
+
+    <div id="linkDiferencial">
+        <h2 id="TextoDifLink" class="TitleDiferencial">Mostre a todos como e onde voce se destaca!</h2>
+        <div class="ConteinterInfoGrid">
+            <div class="InfoGridLine">
+                <div class="LineInfoSquare"></div>
+                <h3>Seu diferencial.</h3>
+            </div>
+            <div class="InfoGridLine">
+                <div class="LineInfoSquare"></div>
+                <h3>Seus produtos e serviços.</h3>
+            </div>
+            <div class="InfoGridLine">
+                <div class="LineInfoSquare"></div>
+                <h3>Seu público mais próximo de você!</h3>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
